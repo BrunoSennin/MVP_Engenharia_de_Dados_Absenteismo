@@ -19,12 +19,12 @@ A partir dos dados tratados, será realizada uma análise exploratória buscando
 
 ### 1.2 Perguntas de negócio
 
-O projeto busca responder às seguintes perguntas:
+O MVP busca responder às seguintes perguntas:
 
-1. Como o absenteísmo se distribui ao longo dos meses e dias da semana? Existem períodos de maior concentração?
-2. Quais são os motivos de ausência mais frequentes e quais representam o maior volume de horas de absenteísmo?
-3. O volume de horas de ausência está concentrado em determinados colaboradores ou distribuído entre a força de trabalho?
-4. Os colaboradores com maior recorrência de ausências são também aqueles que apresentam maior volume de horas de absenteísmo?
+**1. Como o absenteísmo se distribui ao longo dos meses e dias da semana? Existem períodos de maior concentração?**
+**2. Quais são os motivos de ausência mais frequentes e quais representam o maior volume de horas de absenteísmo?**
+**3. O volume de horas de ausência está concentrado em determinados colaboradores ou distribuído entre a força de trabalho?**
+**4. Os colaboradores com maior recorrência de ausências são também aqueles que apresentam maior volume de horas de absenteísmo?**
 
 ## 2. Fonte e Carga dos Dados
 
