@@ -1,10 +1,15 @@
 # MVP_Engenharia_de_Dados_Absenteismo
 MVP da Sprint de Engenharia de Dados do cruso de Data Sciencie e Analytics da PUC-Rio
-# Análise de Absenteísmo no Trabalho utilizando Arquitetura Medallion
+
+# Análise de absenteísmo em uma empresa brasileira de serviços de courier
 
 ## 1. Contexto de Negócios e Perguntas
 
-O absenteísmo corresponde às ausências dos colaboradores ao trabalho e seu acompanhamento é relevante para a gestão da força de trabalho. A análise desses registros permite compreender a distribuição das ausências, identificar os motivos mais representativos e reconhecer possíveis padrões de concentração.
+O absenteísmo corresponde às ausências dos colaboradores ao trabalho e pode gerar impactos significativos no dia a dia das organizações, afetando a rotina operacional e ocasionando custos relacionados ao remanejamento de pessoal, realização de horas extras e possíveis impactos nos prazos das atividades. Dessa forma, seu acompanhamento torna-se relevante para a gestão da força de trabalho.
+
+A análise dos registros de absenteísmo permite compreender a distribuição das ausências, identificar os motivos mais representativos e reconhecer possíveis padrões de concentração. Apesar de parecer um tema simples, o absenteísmo possui diferentes dimensões que podem ser exploradas, permitindo avaliar não apenas a frequência das ocorrências, mas também o volume de horas de ausência e possíveis fatores associados ao seu comportamento.
+
+A partir dessas informações, torna-se possível fornecer subsídios para que a área de gestão de pessoas compreenda melhor o fenômeno e identifique oportunidades de atuação que contribuam para a gestão do absenteísmo e da força de trabalho.
 
 ### 1.1 Objetivo
 
@@ -16,10 +21,11 @@ A partir dos dados tratados, será realizada uma análise exploratória buscando
 
 O projeto busca responder às seguintes perguntas:
 
-1. Quais motivos apresentam maior frequência de ocorrências e quais geram maior volume de horas de ausência?
-2. Como o absenteísmo se distribui ao longo dos meses e dias da semana? Existem períodos de maior concentração?
-3. O volume de horas de ausência está concentrado em determinados colaboradores ou distribuído entre os colaboradores da organização?
-4. Quais características disponíveis na base apresentam associação com maiores níveis de absenteísmo?
+1. Como o absenteísmo se distribui ao longo dos meses e dias da semana? Existem períodos de maior concentração?
+2. Quais são os motivos de ausência mais frequentes e quais representam o maior volume de horas de absenteísmo?
+3. O volume de horas de ausência está concentrado em determinados colaboradores ou distribuído entre a força de trabalho?
+4. Os colaboradores com maior recorrência de ausências são também aqueles que apresentam maior volume de horas de absenteísmo?
+
 ## 2. Fonte e Carga dos Dados
 
 O conjunto de dados utilizado neste projeto é o **Absenteeism at Work**, disponibilizado pelo UCI Machine Learning Repository.
