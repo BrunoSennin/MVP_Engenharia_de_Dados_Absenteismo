@@ -39,7 +39,7 @@ O conjunto de dados possui **740 registros e 21 atributos**, contendo informaç�
 
 ### 2.1 Fonte dos dados
 
-- **Dataset:** Absenteeism at Work
+- **Dataset:** [Absenteeism at Work](
 - **Fonte:** UCI Machine Learning Repository
 - **Período dos dados:** julho de 2007 a julho de 2010
 - **Quantidade de registros:** 740
