@@ -1,5 +1,5 @@
 # MVP_Engenharia_de_Dados_Absenteismo
-MVP da Sprint de Engenharia de Dados do cruso de Data Sciencie e Analytics da PUC-Rio
+MVP da Sprint de Engenharia de Dados do cruso de Data Science e Analytics da PUC-Rio
 
 # Análise de absenteísmo em uma empresa brasileira de serviços de courier
 
