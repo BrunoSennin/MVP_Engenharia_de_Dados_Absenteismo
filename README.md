@@ -88,3 +88,21 @@ As tabelas que compõem o pipeline são:
 | Gold | `agg_absenteeism_weekday` | Agregação das ocorrências e horas de ausência por dia da semana. |
 | Gold | `agg_absenteeism_reason` | Agregação das ocorrências e horas de ausência por motivo. |
 | Gold | `agg_absenteeism_employee` | Agregação das ocorrências e horas de ausência por colaborador. |
+
+### 3.2 Arquitetura e linhagem dos dados
+
+O fluxo dos dados ao longo do pipeline pode ser representado da seguinte forma:
+
+```mermaid
+flowchart LR
+    A[Arquivo CSV] --> B[Bronze<br/>absenteeism_raw]
+    B --> C[Silver<br/>absenteeism]
+    C --> D[Gold<br/>agg_absenteeism_month]
+    C --> E[Gold<br/>agg_absenteeism_weekday]
+    C --> F[Gold<br/>agg_absenteeism_reason]
+    C --> G[Gold<br/>agg_absenteeism_employee]
+    C --> H[Análises e<br/>Visualizações]
+    D --> H
+    E --> H
+    F --> H
+    G --> H
