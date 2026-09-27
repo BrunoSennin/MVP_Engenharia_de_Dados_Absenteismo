@@ -244,3 +244,56 @@ A estrutura abaixo apresenta as tabelas persistidas no Unity Catalog após a exe
 ![Estrutura das camadas Bronze, Silver e Gold no Databricks](images/estrutura_databricks.png)
 
 *Figura 1 — Estrutura das camadas e tabelas do projeto no Databricks.*
+
+## 5. Qualidade de Dados
+
+A qualidade dos dados foi avaliada antes da construção da camada Silver, considerando aspectos de **completude, unicidade, consistência, plausibilidade e presença de valores atípicos**.
+
+As verificações foram realizadas utilizando PySpark no notebook [`01_pipeline_medallion_absenteismo.ipynb`](./Notebooks/01_pipeline_medallion_absenteismo.ipynb).
+
+### 5.1 Completude
+
+Foi verificada a presença de valores nulos ou vazios nos 21 atributos da base original.
+
+A análise não identificou valores ausentes, resultando em **100% de completude** para os atributos avaliados.
+
+### 5.2 Unicidade
+
+A base possui **740 registros**, dos quais **706 correspondem a combinações distintas de todos os atributos**, resultando em 34 ocorrências excedentes associadas a registros idênticos.
+
+Esses registros foram mantidos, pois a base não possui um identificador único para cada evento de ausência. Dessa forma, não existem evidências suficientes para afirmar que os registros representam erros de duplicidade, podendo corresponder a ocorrências distintas com as mesmas características.
+
+### 5.3 Consistência
+
+Foram avaliados os domínios dos atributos categóricos de acordo com a documentação da fonte.
+
+Foram identificadas duas situações que exigiram tratamento:
+
+- **Motivo da ausência:** 43 registros apresentam o código `0`, enquanto a documentação descreve os motivos de `1` a `28`. O valor original foi preservado e recebeu a descrição **"Não especificado na documentação"** na camada Silver.
+- **Mês:** 3 registros apresentam o código `0`, fora do domínio esperado de `1` a `12`. O valor original foi preservado e recebeu a descrição **"Não informado"** na camada Silver.
+
+Os demais atributos categóricos avaliados apresentaram valores compatíveis com os domínios documentados.
+
+### 5.4 Plausibilidade dos dados
+
+Também foram avaliados os intervalos observados nos principais atributos numéricos, buscando identificar valores incompatíveis com o contexto dos dados.
+
+Não foram identificados valores negativos nos atributos avaliados. As variáveis relacionadas a idade, distância, tempo de serviço, peso, altura, índice de massa corporal e horas de ausência apresentaram valores numericamente plausíveis dentro do contexto da base.
+
+Foram identificados **44 registros com zero horas de ausência**. Esses registros foram preservados, pois fazem parte dos dados de origem e não há evidência suficiente para classificá-los como erros.
+
+### 5.5 Valores atípicos
+
+Para a variável `absenteeism_time_in_hours`, foi realizada uma análise de valores atípicos utilizando o método do **intervalo interquartil (IQR)**.
+
+Foram obtidos:
+
+- Q1 = 2 horas
+- Q3 = 8 horas
+- IQR = 6 horas
+- Limite inferior = -7 horas
+- Limite superior = 17 horas
+
+A aplicação desse critério identificou **44 registros acima do limite superior**, com valores entre 24 e 120 horas de ausência.
+
+Os registros foram mantidos, pois representam valores estatisticamente atípicos, mas não necessariamente inválidos. Além disso, ausências de maior duração são relevantes para a análise do impacto do absenteísmo e sua exclusão poderia reduzir informações importantes para as perguntas de negócio.
