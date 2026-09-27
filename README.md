@@ -323,3 +323,11 @@ Esses resultados indicam uma maior concentração de horas de ausência em deter
 ![Total de horas de ausência por mês](images/absenteismo_mes.png)
 
 *Figura 3 — Total de horas de ausência por mês.*
+
+Na análise por dia da semana, a **segunda-feira apresentou o maior volume de horas de ausência, com 1.489 horas**, seguida pela terça-feira, com 1.229 horas, e pela quarta-feira, com 1.115 horas.
+
+Os menores volumes foram observados na quinta-feira, com 553 horas, e na sexta-feira, com 738 horas. Dessa forma, os registros analisados apresentam maior concentração de horas de ausência no início da semana, especialmente às segundas-feiras.
+
+![Total de horas de ausência por dia da semana](images/absenteismo_dia_semana.png)
+
+*Figura 4 — Total de horas de ausência por dia da semana.*
