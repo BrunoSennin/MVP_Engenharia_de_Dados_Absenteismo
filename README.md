@@ -59,7 +59,7 @@ Após a ingestão, os dados foram persistidos em formato **Delta** na camada Bro
 
 Essa tabela representa a entrada do pipeline e mantém os dados brutos antes das etapas de tratamento, padronização e enriquecimento realizadas na camada Silver.
 
-O processo de ingestão e construção das camadas está disponível no notebook [`01_pipeline_medallion_absenteismo.ipynb`](Nootbooks/01_pipeline_medallion_absenteismo.ipynb).
+O processo de ingestão e construção das camadas está disponível no notebook [`01_pipeline_medallion_absenteismo.ipynb`](notebooks/01_pipeline_medallion_absenteismo.ipynb).
 
 ## 3. Modelagem e Catálogo de Dados
 
@@ -191,7 +191,7 @@ Tabela agregada utilizada para analisar recorrência, volume e concentração da
 
 O pipeline de dados foi desenvolvido no **Databricks Free Edition**, utilizando **PySpark** para realizar as etapas de ingestão, transformação, enriquecimento e agregação dos dados.
 
-O processamento segue a arquitetura Medallion e foi implementado no notebook [`01_pipeline_medallion_absenteismo.ipynb`](Nootbooks/01_pipeline_medallion_absenteismo.ipynb).
+O processamento segue a arquitetura Medallion e foi implementado no notebook [`01_pipeline_medallion_absenteismo.ipynb`](notebooks/01_pipeline_medallion_absenteismo.ipynb).
 
 ### 4.1 Camada Bronze
 
