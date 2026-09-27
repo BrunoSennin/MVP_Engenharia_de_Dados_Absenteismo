@@ -379,3 +379,9 @@ A análise apresentou um coeficiente de correlação de Pearson de 0,824, indica
 ![Relação entre recorrência e volume de horas de ausência](images/recorrencia_volume_absenteismo.png)
 
 *Figura 9 — Relação entre quantidade de ocorrências e total de horas de ausência por colaborador.*
+
+Entretanto, essa relação não é proporcional para todos os colaboradores. O colaborador de ID 3, por exemplo, apresentou 113 ocorrências e 482 horas de ausência, enquanto o colaborador de ID 14 apresentou 29 ocorrências e 476 horas. Apesar da diferença expressiva na quantidade de ocorrências, ambos apresentam volumes totais de horas semelhantes.
+
+Esse comportamento demonstra que a recorrência, isoladamente, não explica todo o volume de absenteísmo. A duração das ocorrências também influencia o total de horas acumuladas, fazendo com que colaboradores com menor número de registros possam apresentar impacto semelhante ou superior ao de colaboradores com ausências mais frequentes.
+
+Portanto, os dados indicam uma forte associação entre recorrência e volume de horas, mas mostram também que as duas medidas não são equivalentes e devem ser analisadas conjuntamente.
