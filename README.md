@@ -398,10 +398,20 @@ Essa análise complementa os resultados anteriores ao demonstrar que volumes ele
 
 *Figura 10 — Principal motivo de ausência, considerando o volume de horas, para cada um dos cinco colaboradores com maior volume total de absenteísmo.*
 
+### 6.6 Discussão geral
+
+De forma geral, as análises demonstram que o absenteísmo apresenta diferentes padrões quando observado sob as perspectivas de período, motivo e colaborador. Foram identificadas concentrações de horas em determinados meses e dias da semana, além de diferenças relevantes entre os motivos mais frequentes e aqueles responsáveis pelo maior volume de horas.
+
+Também foi observada concentração de uma parcela relevante das horas de ausência em um grupo reduzido de colaboradores. Embora a recorrência apresente forte associação com o volume total de horas, os resultados demonstram que a duração e o motivo das ausências também são relevantes para a compreensão do fenômeno.
+
+Dessa forma, os resultados reforçam a importância de analisar o absenteísmo a partir de diferentes dimensões, evitando que seu acompanhamento seja realizado apenas pela quantidade de ocorrências ou pelo volume total de horas.
+
 ## 7. Autoavaliação
 
 O desenvolvimento deste MVP permitiu aplicar de forma prática conceitos de engenharia de dados em ambiente cloud, desde a ingestão dos dados até sua disponibilização para análise. O projeto proporcionou a oportunidade de atuar de ponta a ponta, partindo da definição de um problema de negócio até a construção e análise dos dados em um cenário aplicável ao dia a dia das organizações.
 
 Um dos principais aprendizados foi compreender a importância de preservar os dados de origem e documentar as decisões tomadas durante o tratamento. Situações como registros aparentemente duplicados, códigos não descritos na documentação, valores iguais a zero e valores estatisticamente atípicos exigiram análise antes da aplicação de qualquer tratamento, evitando a exclusão de informações sem evidências suficientes de erro.
+
+Entre as principais dificuldades encontradas durante o desenvolvimento estiveram a interpretação de valores não descritos na documentação da fonte e a definição do tratamento adequado para registros aparentemente duplicados e valores atípicos. Como trabalhos futuros, o projeto poderia incorporar novas fontes de dados, automatizar o processo de ingestão e ampliar as análises realizadas.
 
 De forma geral, considero que o MVP atingiu o objetivo proposto ao construir um pipeline completo em ambiente cloud, estruturado nas camadas Bronze, Silver e Gold, com etapas de qualidade, transformação, agregação e análise orientadas às perguntas de negócio. Além de responder às perguntas estabelecidas no início do projeto, foi possível desenvolver uma análise prática e direcionada ao objetivo definido.
