@@ -186,3 +186,47 @@ Tabela agregada utilizada para analisar recorrência, volume e concentração da
 | `total_absence_hours` | LONG | Total de horas de ausência do colaborador. |
 | `average_absence_hours` | DOUBLE | Média de horas de ausência por registro do colaborador. |
 | `percentage_total_hours` | DOUBLE | Participação percentual do colaborador no total de horas de ausência. |
+
+### 4.1 Camada Bronze
+
+A camada Bronze representa a entrada do pipeline. O arquivo CSV foi lido utilizando PySpark e persistido em formato Delta na tabela:
+
+`workspace.bronze.absenteeism_raw`
+
+Nesta etapa, foram preservados os nomes dos atributos e a estrutura proveniente da fonte, mantendo uma representação dos dados antes das transformações realizadas nas camadas posteriores.
+
+### 4.2 Camada Silver
+
+A camada Silver foi construída a partir dos dados da Bronze e concentra as principais transformações do pipeline.
+
+Foram realizadas as seguintes etapas:
+
+- padronização dos nomes dos atributos;
+- conversão dos atributos para os tipos de dados definidos no projeto;
+- criação das descrições de mês, dia da semana, estação e escolaridade;
+- criação da tabela auxiliar `reason_lookup` com os códigos e descrições dos motivos de ausência;
+- enriquecimento da base principal com a descrição dos motivos de ausência;
+- tratamento dos códigos não descritos na documentação da fonte, preservando os valores originais.
+
+Como resultado, foram persistidas as tabelas:
+
+`workspace.silver.absenteeism`
+
+`workspace.silver.reason_lookup`
+
+### 4.3 Camada Gold
+
+A camada Gold foi construída exclusivamente a partir dos dados tratados da camada Silver e tem como finalidade disponibilizar estruturas diretamente relacionadas às perguntas de negócio.
+
+Foram criadas quatro tabelas agregadas:
+
+- `workspace.gold.agg_absenteeism_month`
+- `workspace.gold.agg_absenteeism_weekday`
+- `workspace.gold.agg_absenteeism_reason`
+- `workspace.gold.agg_absenteeism_employee`
+
+As agregações apresentam indicadores como quantidade de ocorrências, total de horas de ausência e média de horas, considerando diferentes perspectivas de análise.
+
+A tabela por colaborador também apresenta sua participação percentual no total de horas de ausência, permitindo avaliar a concentração do absenteísmo entre os colaboradores.
+
+As tabelas da camada Gold são utilizadas como principal fonte do notebook [`02_analise_absenteismo.ipynb`](./Notebooks/02_analise_absenteismo.ipynb).
