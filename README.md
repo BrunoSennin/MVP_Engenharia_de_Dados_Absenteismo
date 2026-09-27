@@ -342,7 +342,7 @@ Em relação à frequência, consulta médica apresentou o maior número de regi
 
 *Figura 5 — Dez motivos de ausência com maior número de ocorrências.*
 
-Quando considerado o volume de horas, observa-se uma composição diferente. As doenças do sistema osteomuscular e do tecido conjuntivo apresentaram o maior volume, com 842 horas de ausência, seguidas por lesões, envenenamentos e outras consequências de causas externas, com 729 horas. As consultas médicas, apesar de apresentarem a maior frequência, corresponderam a 424 horas de ausência.
+Quando considerado o volume de horas, observa-se uma composição diferente. As doenças do sistema musculoesquelético e do tecido conjuntivo apresentaram o maior volume, com 842 horas de ausência, seguidas por lesões, envenenamentos e outras consequências de causas externas, com 729 horas. As consultas médicas, apesar de apresentarem a maior frequência, corresponderam a 424 horas de ausência.
 
 ![Motivos com maior volume de horas de ausência](images/motivos_maior_volume_horas.png)
 
