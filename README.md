@@ -47,7 +47,7 @@ O conjunto de dados possui **740 registros e 21 atributos**, contendo informaç�
 - **Formato utilizado:** CSV
 - **Documentação auxiliar:** [Attribute Information](https://github.com/BrunoSennin/MVP_Engenharia_de_Dados_Absenteismo/blob/main/documentation/Attribute%20Information.md)
 
-- ### 2.2 Carga dos dados
+### 2.2 Carga dos dados
 
 Os arquivos de origem foram carregados manualmente no ambiente **Databricks Free Edition**, sendo armazenados em um Volume do Unity Catalog destinado à camada Bronze.
 
