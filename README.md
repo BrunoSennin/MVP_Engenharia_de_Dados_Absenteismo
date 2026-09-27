@@ -235,4 +235,4 @@ As agregações apresentam indicadores como quantidade de ocorrências, total de
 
 A tabela por colaborador também apresenta sua participação percentual no total de horas de ausência, permitindo avaliar a concentração do absenteísmo entre os colaboradores.
 
-As tabelas da camada Gold são utilizadas como principal fonte do notebook [`02_analise_absenteismo.ipynb`](Notebooks/02_analise_absenteismo.ipynb).
+As tabelas da camada Gold são utilizadas como principal fonte do notebook [`02_analise_absenteismo.ipynb`](Nootbooks/02_analise_absenteismo.ipynb).
