@@ -191,7 +191,7 @@ Tabela agregada utilizada para analisar recorrência, volume e concentração da
 
 O pipeline de dados foi desenvolvido no **Databricks Free Edition**, utilizando **PySpark** para realizar as etapas de ingestão, transformação, enriquecimento e agregação dos dados.
 
-O processamento segue a arquitetura Medallion e foi implementado no notebook [`01_pipeline_medallion_absenteismo.ipynb`](notebooks/01_pipeline_medallion_absenteismo.ipynb).
+O pipeline de engenharia de dados foi concentrado no notebook [`01_pipeline_medallion_absenteismo.ipynb`](notebooks/01_pipeline_medallion_absenteismo.ipynb), responsável pela construção das camadas Bronze, Silver e Gold. A etapa de análise foi separada no notebook [`02_analise_absenteismo.ipynb`](notebooks/02_analise_absenteismo.ipynb), utilizando principalmente as tabelas disponibilizadas pela camada Gold.
 
 ### 4.1 Camada Bronze
 
