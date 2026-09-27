@@ -385,3 +385,15 @@ Entretanto, essa relação não é proporcional para todos os colaboradores. O c
 Esse comportamento demonstra que a recorrência, isoladamente, não explica todo o volume de absenteísmo. A duração das ocorrências também influencia o total de horas acumuladas, fazendo com que colaboradores com menor número de registros possam apresentar impacto semelhante ou superior ao de colaboradores com ausências mais frequentes.
 
 Portanto, os dados indicam uma forte associação entre recorrência e volume de horas, mas mostram também que as duas medidas não são equivalentes e devem ser analisadas conjuntamente.
+
+### 6.5 Análise complementar dos colaboradores com maior volume de horas
+
+Como análise complementar, foram avaliados os principais motivos de ausência dos cinco colaboradores com maior volume total de horas, utilizando os dados detalhados da camada Silver.
+
+Os resultados demonstram que os motivos predominantes diferem entre esses colaboradores. Entre os casos observados, destacam-se lesões e outras consequências de causas externas, doenças do sistema musculoesquelético e do tecido conjuntivo, doenças do aparelho digestivo e doenças do aparelho circulatório.
+
+Essa análise complementa os resultados anteriores ao demonstrar que volumes elevados de horas podem estar associados a diferentes combinações entre frequência, duração e motivo das ausências.
+
+![Principais motivos de ausência dos colaboradores com maior volume de horas](images/principais_motivos_top5_colaboradores.png)
+
+*Figura 10 — Principal motivo de ausência em horas entre os cinco colaboradores com maior volume total de absenteísmo.*
