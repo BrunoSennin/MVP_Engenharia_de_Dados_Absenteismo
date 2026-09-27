@@ -191,7 +191,7 @@ Tabela agregada utilizada para analisar recorrência, volume e concentração da
 
 O pipeline de dados foi desenvolvido no **Databricks Free Edition**, utilizando **PySpark** para realizar as etapas de ingestão, transformação, enriquecimento e agregação dos dados.
 
-O processamento segue a arquitetura Medallion e foi implementado no notebook [`01_pipeline_medallion_absenteismo.ipynb`](./Notebooks/01_pipeline_medallion_absenteismo.ipynb).
+O processamento segue a arquitetura Medallion e foi implementado no notebook [`01_pipeline_medallion_absenteismo.ipynb`](Nootbooks/01_pipeline_medallion_absenteismo.ipynb).
 
 ### 4.1 Camada Bronze
 
@@ -235,4 +235,4 @@ As agregações apresentam indicadores como quantidade de ocorrências, total de
 
 A tabela por colaborador também apresenta sua participação percentual no total de horas de ausência, permitindo avaliar a concentração do absenteísmo entre os colaboradores.
 
-As tabelas da camada Gold são utilizadas como principal fonte do notebook [`02_analise_absenteismo.ipynb`](./Notebooks/02_analise_absenteismo.ipynb).
+As tabelas da camada Gold são utilizadas como principal fonte do notebook [`02_analise_absenteismo.ipynb`](Notebooks/02_analise_absenteismo.ipynb).
