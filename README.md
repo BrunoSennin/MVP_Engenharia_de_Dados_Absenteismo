@@ -89,20 +89,100 @@ As tabelas que compõem o pipeline são:
 | Gold | `agg_absenteeism_reason` | Agregação das ocorrências e horas de ausência por motivo. |
 | Gold | `agg_absenteeism_employee` | Agregação das ocorrências e horas de ausência por colaborador. |
 
-### 3.2 Arquitetura e linhagem dos dados
+### 3.2 Catálogo de Dados
 
-O fluxo dos dados ao longo do pipeline pode ser representado da seguinte forma:
+O catálogo de dados apresenta a estrutura das principais tabelas utilizadas nas camadas Silver e Gold, incluindo os atributos, tipos de dados e suas respectivas descrições.
 
-```mermaid
-flowchart LR
-    A[Arquivo CSV] --> B[Bronze<br/>absenteeism_raw]
-    B --> C[Silver<br/>absenteeism]
-    C --> D[Gold<br/>agg_absenteeism_month]
-    C --> E[Gold<br/>agg_absenteeism_weekday]
-    C --> F[Gold<br/>agg_absenteeism_reason]
-    C --> G[Gold<br/>agg_absenteeism_employee]
-    C --> H[Análises e<br/>Visualizações]
-    D --> H
-    E --> H
-    F --> H
-    G --> H
+A camada Bronze preserva os 21 atributos provenientes do arquivo de origem, enquanto a camada Silver realiza a padronização dos nomes, tipagem dos dados e inclusão de atributos descritivos. A camada Gold contém as estruturas agregadas utilizadas para apoiar as análises de negócio.
+
+#### 3.2.1 Silver — `absenteeism`
+
+Tabela principal tratada e enriquecida do projeto.
+
+| Atributo | Tipo | Descrição |
+|---|---|---|
+| `id` | INT | Identificador do colaborador. |
+| `reason_code` | INT | Código correspondente ao motivo da ausência. |
+| `month_code` | INT | Código numérico do mês da ausência. |
+| `day_of_week_code` | INT | Código do dia da semana da ausência. |
+| `season_code` | INT | Código da estação do ano. |
+| `transportation_expense` | INT | Despesa de transporte do colaborador. |
+| `distance_from_residence_to_work` | INT | Distância entre residência e trabalho, em quilômetros. |
+| `service_time` | INT | Tempo de serviço do colaborador. |
+| `age` | INT | Idade do colaborador. |
+| `work_load_average_day` | DOUBLE | Indicador de carga média de trabalho por dia. |
+| `hit_target` | INT | Indicador relacionado ao atingimento da meta. |
+| `disciplinary_failure` | INT | Indicador de ocorrência disciplinar: 0 = não e 1 = sim. |
+| `education_code` | INT | Código referente ao nível de escolaridade. |
+| `son` | INT | Quantidade de filhos. |
+| `social_drinker` | INT | Indicador de consumo social de álcool: 0 = não e 1 = sim. |
+| `social_smoker` | INT | Indicador de tabagismo: 0 = não e 1 = sim. |
+| `pet` | INT | Quantidade de animais de estimação. |
+| `weight` | INT | Peso do colaborador. |
+| `height` | INT | Altura do colaborador. |
+| `body_mass_index` | INT | Índice de massa corporal (IMC). |
+| `absenteeism_time_in_hours` | INT | Quantidade de horas de ausência registrada. |
+| `month_name` | STRING | Descrição do mês da ausência. |
+| `day_of_week_name` | STRING | Descrição do dia da semana da ausência. |
+| `season_name` | STRING | Descrição da estação do ano. |
+| `education_description` | STRING | Descrição do nível de escolaridade. |
+| `reason_description` | STRING | Descrição do motivo da ausência. |
+
+#### 3.2.2 Silver — `reason_lookup`
+
+Tabela auxiliar utilizada para relacionar os códigos dos motivos de ausência às respectivas descrições.
+
+| Atributo | Tipo | Descrição |
+|---|---|---|
+| `reason_code` | INT | Código do motivo da ausência. |
+| `reason_description` | STRING | Descrição correspondente ao motivo da ausência. |
+
+Os códigos documentados pela fonte compreendem os valores de **1 a 28**. O código `0`, identificado nos dados de origem, foi preservado na tabela principal e classificado no projeto como **"Não especificado na documentação"**.
+
+#### 3.2.3 Gold — `agg_absenteeism_month`
+
+Tabela agregada utilizada para analisar a distribuição do absenteísmo por mês.
+
+| Atributo | Descrição |
+|---|---|
+| `month_code` | Código numérico do mês. |
+| `month_name` | Descrição do mês. |
+| `absence_occurrences` | Quantidade de registros de ausência no mês. |
+| `total_absence_hours` | Total de horas de ausência no mês. |
+| `average_absence_hours` | Média de horas de ausência por registro no mês. |
+
+#### 3.2.4 Gold — `agg_absenteeism_weekday`
+
+Tabela agregada utilizada para analisar a distribuição do absenteísmo por dia da semana.
+
+| Atributo | Descrição |
+|---|---|
+| `day_of_week_code` | Código do dia da semana. |
+| `day_of_week_name` | Descrição do dia da semana. |
+| `absence_occurrences` | Quantidade de registros de ausência no dia da semana. |
+| `total_absence_hours` | Total de horas de ausência no dia da semana. |
+| `average_absence_hours` | Média de horas de ausência por registro. |
+
+#### 3.2.5 Gold — `agg_absenteeism_reason`
+
+Tabela agregada utilizada para analisar frequência e volume de horas por motivo de ausência.
+
+| Atributo | Descrição |
+|---|---|
+| `reason_code` | Código do motivo da ausência. |
+| `reason_description` | Descrição do motivo da ausência. |
+| `absence_occurrences` | Quantidade de registros associados ao motivo. |
+| `total_absence_hours` | Total de horas de ausência associado ao motivo. |
+| `average_absence_hours` | Média de horas de ausência por registro do motivo. |
+
+#### 3.2.6 Gold — `agg_absenteeism_employee`
+
+Tabela agregada utilizada para analisar recorrência, volume e concentração das ausências por colaborador.
+
+| Atributo | Descrição |
+|---|---|
+| `id` | Identificador do colaborador. |
+| `absence_occurrences` | Quantidade de registros de ausência do colaborador. |
+| `total_absence_hours` | Total de horas de ausência do colaborador. |
+| `average_absence_hours` | Média de horas de ausência por registro do colaborador. |
+| `percentage_total_hours` | Participação percentual do colaborador no total de horas de ausência. |
