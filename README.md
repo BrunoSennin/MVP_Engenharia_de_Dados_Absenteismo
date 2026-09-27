@@ -397,3 +397,11 @@ Essa análise complementa os resultados anteriores ao demonstrar que volumes ele
 ![Principais motivos de ausência dos colaboradores com maior volume de horas](images/principais_motivos_top5_colaboradores.png)
 
 *Figura 10 — Principal motivo de ausência, considerando o volume de horas, para cada um dos cinco colaboradores com maior volume total de absenteísmo.*
+
+## 7. Autoavaliação
+
+O desenvolvimento deste MVP permitiu aplicar de forma prática conceitos de engenharia de dados em ambiente cloud, desde a ingestão dos dados até sua disponibilização para análise. Dando a oportunidade de atuar do inicio ao fim do projeto estabelecendo problemas reais e atuando sobre uma base de dados, conforme uma situação do dia-a-dia de trabalho.
+
+Um dos principais aprendizados foi compreender a importância de preservar os dados de origem e documentar as decisões tomadas durante o tratamento. Situações como registros aparentemente duplicados, códigos não descritos na documentação, valores iguais a zero e valores estatisticamente atípicos exigiram análise antes da aplicação de qualquer tratamento, evitando a exclusão de informações sem evidências suficientes de erro.
+
+De forma geral, considero que o MVP atingiu o objetivo proposto ao construir um pipeline completo em ambiente cloud, estruturado nas camadas Bronze, Silver e Gold, com etapas de qualidade, transformação, agregação e análise orientadas às perguntas de negócio. Além de responder as perguntas estabelecidas no inicio do projeto, foi possível realizar a construção da análise de forma prática e direcionada ao objetivo principal.
