@@ -249,7 +249,7 @@ A estrutura abaixo apresenta as tabelas persistidas no Unity Catalog após a exe
 
 A qualidade dos dados foi avaliada antes da construção da camada Silver, considerando aspectos de **completude, unicidade, consistência, plausibilidade e presença de valores atípicos**.
 
-As verificações foram realizadas utilizando PySpark no notebook [`01_pipeline_medallion_absenteismo.ipynb`](./Notebooks/01_pipeline_medallion_absenteismo.ipynb).
+As verificações foram realizadas utilizando PySpark no notebook [`01_pipeline_medallion_absenteismo.ipynb`](notebooks/01_pipeline_medallion_absenteismo.ipynb).
 
 ### 5.1 Completude
 
