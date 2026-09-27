@@ -155,34 +155,34 @@ Tabela agregada utilizada para analisar a distribuição do absenteísmo por mê
 
 Tabela agregada utilizada para analisar a distribuição do absenteísmo por dia da semana.
 
-| Atributo | Descrição |
-|---|---|
-| `day_of_week_code` | Código do dia da semana. |
-| `day_of_week_name` | Descrição do dia da semana. |
-| `absence_occurrences` | Quantidade de registros de ausência no dia da semana. |
-| `total_absence_hours` | Total de horas de ausência no dia da semana. |
-| `average_absence_hours` | Média de horas de ausência por registro. |
+| Atributo | Tipo | Descrição |
+|---|---|---|
+| `day_of_week_code` | INT | Código do dia da semana. |
+| `day_of_week_name` | STRING | Descrição do dia da semana. |
+| `absence_occurrences` | LONG | Quantidade de registros de ausência no dia da semana. |
+| `total_absence_hours` | LONG | Total de horas de ausência no dia da semana. |
+| `average_absence_hours` | DOUBLE | Média de horas de ausência por registro. |
 
 #### 3.2.5 Gold — `agg_absenteeism_reason`
 
 Tabela agregada utilizada para analisar frequência e volume de horas por motivo de ausência.
 
-| Atributo | Descrição |
-|---|---|
-| `reason_code` | Código do motivo da ausência. |
-| `reason_description` | Descrição do motivo da ausência. |
-| `absence_occurrences` | Quantidade de registros associados ao motivo. |
-| `total_absence_hours` | Total de horas de ausência associado ao motivo. |
-| `average_absence_hours` | Média de horas de ausência por registro do motivo. |
+| Atributo | Tipo | Descrição |
+|---|---|---|
+| `reason_code` | INT | Código do motivo da ausência. |
+| `reason_description` | STRING | Descrição do motivo da ausência. |
+| `absence_occurrences` | LONG | Quantidade de registros associados ao motivo. |
+| `total_absence_hours` | LONG | Total de horas de ausência associado ao motivo. |
+| `average_absence_hours` | DOUBLE | Média de horas de ausência por registro do motivo. |
 
 #### 3.2.6 Gold — `agg_absenteeism_employee`
 
 Tabela agregada utilizada para analisar recorrência, volume e concentração das ausências por colaborador.
 
-| Atributo | Descrição |
-|---|---|
-| `id` | Identificador do colaborador. |
-| `absence_occurrences` | Quantidade de registros de ausência do colaborador. |
-| `total_absence_hours` | Total de horas de ausência do colaborador. |
-| `average_absence_hours` | Média de horas de ausência por registro do colaborador. |
-| `percentage_total_hours` | Participação percentual do colaborador no total de horas de ausência. |
+| Atributo | Tipo | Descrição |
+|---|---|---|
+| `id` | INT | Identificador do colaborador. |
+| `absence_occurrences` | LONG | Quantidade de registros de ausência do colaborador. |
+| `total_absence_hours` | LONG | Total de horas de ausência do colaborador. |
+| `average_absence_hours` | DOUBLE | Média de horas de ausência por registro do colaborador. |
+| `percentage_total_hours` | DOUBLE | Participação percentual do colaborador no total de horas de ausência. |
