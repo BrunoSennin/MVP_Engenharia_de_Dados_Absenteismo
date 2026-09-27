@@ -302,6 +302,6 @@ Os registros foram mantidos, pois representam valores estatisticamente atípicos
 
 A figura abaixo apresenta parte das verificações de qualidade executadas no Databricks, incluindo a análise de registros com zero horas de ausência e a identificação de valores atípicos.
 
-![Verificações de qualidade dos dados no Databricks](/images/qualidade_dados_databricks.png)
+![Verificações de qualidade dos dados no Databricks](images/qualidade_dados_databricks.png)
 
-*Figura 2 — Evidência das verificações de qualidade executadas no Databricks.*
+*Figura 2 — Verificações de qualidade executadas no Databricks.*
