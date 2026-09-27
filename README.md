@@ -60,3 +60,31 @@ Após a ingestão, os dados foram persistidos em formato **Delta** na camada Bro
 Essa tabela representa a entrada do pipeline e mantém os dados brutos antes das etapas de tratamento, padronização e enriquecimento realizadas na camada Silver.
 
 O processo de ingestão e construção das camadas está disponível no notebook [`01_pipeline_medallion_absenteismo.ipynb`](Nootbooks/01_pipeline_medallion_absenteismo.ipynb).
+
+## 3. Modelagem e Catálogo de Dados
+
+### 3.1 Modelagem dos dados
+
+A modelagem do projeto foi estruturada seguindo a arquitetura **Medallion**, com a organização dos dados nas camadas Bronze, Silver e Gold.
+
+A escolha dessa arquitetura permite separar as diferentes etapas do processamento, mantendo os dados brutos preservados na camada inicial e disponibilizando, nas camadas seguintes, dados progressivamente tratados e preparados para análise.
+
+A estrutura adotada foi:
+
+- **Bronze:** armazenamento dos dados brutos provenientes do arquivo de origem, sem aplicação das regras de tratamento utilizadas nas etapas posteriores.
+- **Silver:** dados padronizados, tipados e enriquecidos com descrições que facilitam sua interpretação. Nesta camada também foi criada uma tabela auxiliar contendo a descrição dos motivos de ausência.
+- **Gold:** tabelas agregadas construídas a partir dos dados da camada Silver e direcionadas às perguntas de negócio definidas no projeto.
+
+A camada Silver foi mantida em uma estrutura predominantemente **flat**, adequada às características e ao volume do conjunto de dados utilizado. A camada Gold, por sua vez, foi estruturada em tabelas agregadas específicas para cada dimensão de análise.
+
+As tabelas que compõem o pipeline são:
+
+| Camada | Tabela | Finalidade |
+|---|---|---|
+| Bronze | `absenteeism_raw` | Preservação dos dados provenientes do arquivo de origem. |
+| Silver | `absenteeism` | Base principal tratada, tipada, padronizada e enriquecida. |
+| Silver | `reason_lookup` | Tabela auxiliar com os códigos e descrições dos motivos de ausência. |
+| Gold | `agg_absenteeism_month` | Agregação das ocorrências e horas de ausência por mês. |
+| Gold | `agg_absenteeism_weekday` | Agregação das ocorrências e horas de ausência por dia da semana. |
+| Gold | `agg_absenteeism_reason` | Agregação das ocorrências e horas de ausência por motivo. |
+| Gold | `agg_absenteeism_employee` | Agregação das ocorrências e horas de ausência por colaborador. |
