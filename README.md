@@ -1,9 +1,9 @@
 # MVP — Engenharia de Dados
 
-**Aluno:** Bruno Rocha do Nascimento.
-**RA**:4052025002341.
-**GitHub:** [BrunoSennin](https://github.com/BrunoSennin).
-**Sprint:** Engenharia de Dados (40530010057_20260_01).
+**Aluno:** Bruno Rocha do Nascimento  
+**RA**:4052025002341  
+**GitHub:** [BrunoSennin](https://github.com/BrunoSennin)  
+**Sprint:** Engenharia de Dados (40530010057_20260_01)  
 
 # Análise de absenteísmo em uma empresa brasileira de serviços de courier
 
