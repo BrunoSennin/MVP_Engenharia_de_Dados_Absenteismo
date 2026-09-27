@@ -354,7 +354,7 @@ A comparação demonstra que frequência de ocorrências e volume de horas repre
 
 Para responder à terceira pergunta de negócio — **O volume de horas de ausência está concentrado em determinados colaboradores ou distribuído entre a força de trabalho?** — foi analisada a participação dos colaboradores no total de horas de ausência e sua distribuição por faixas.
 
-Os resultados demonstram uma concentração relevante das horas de ausência em uma parcela dos colaboradores. O colaborador com maior volume representa 9,41% do total de horas registradas. Considerando os três colaboradores com maior volume, a participação acumulada alcança 27,48%, enquanto os cinco primeiros representam 40,96% e os dez primeiros concentram **68,01%** do total de horas de ausência.
+Os resultados demonstram uma concentração relevante das horas de ausência em uma parcela dos colaboradores. O colaborador com maior volume representa 9,41% do total de horas registradas. Considerando os três colaboradores com maior volume, a participação acumulada alcança 27,48%, enquanto os cinco primeiros representam 40,96% e os dez primeiros concentram 68,01% do total de horas de ausência.
 
 A tabela a seguir apresenta os colaboradores com maior volume de horas de ausência, permitindo observar suas respectivas quantidades de ocorrências, total de horas e participação no volume total de absenteísmo.
 
