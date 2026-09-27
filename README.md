@@ -396,4 +396,4 @@ Essa análise complementa os resultados anteriores ao demonstrar que volumes ele
 
 ![Principais motivos de ausência dos colaboradores com maior volume de horas](images/principais_motivos_top5_colaboradores.png)
 
-*Figura 10 — Principal motivo de ausência em horas entre os cinco colaboradores com maior volume total de absenteísmo.*
+*Figura 10 — Principal motivo de ausência, considerando o volume de horas, para cada um dos cinco colaboradores com maior volume total de absenteísmo.*
