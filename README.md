@@ -349,3 +349,17 @@ Quando considerado o volume de horas, observa-se uma composição diferente. As 
 *Figura 6 — Dez motivos de ausência com maior volume de horas.*
 
 A comparação demonstra que frequência de ocorrências e volume de horas representam perspectivas diferentes do absenteísmo. Motivos associados a muitas ocorrências não são necessariamente aqueles responsáveis pelo maior volume de horas, indicando a importância de considerar simultaneamente recorrência e duração das ausências na análise.
+
+### 6.3 Concentração das horas de ausência entre os colaboradores
+
+Para responder à terceira pergunta de negócio — **O volume de horas de ausência está concentrado em determinados colaboradores ou distribuído entre a força de trabalho?** — foi analisada a participação dos colaboradores no total de horas de ausência e sua distribuição por faixas.
+
+Os resultados demonstram uma concentração relevante das horas de ausência em uma parcela dos colaboradores. O colaborador com maior volume representa 9,41% do total de horas registradas. Considerando os três colaboradores com maior volume, a participação acumulada alcança 27,48%, enquanto os cinco primeiros representam 40,96% e os dez primeiros concentram **68,01%** do total de horas de ausência.
+
+A distribuição por faixas reforça esse comportamento. Dos 36 colaboradores presentes na base, 19 registraram menos de 100 horas de ausência, enquanto apenas três se encontram na faixa entre 400 e 500 horas.
+
+![Distribuição dos colaboradores por faixa de horas de ausência](images/distribuicao_horas_colaboradores.png)
+
+*Figura 7 — Distribuição dos colaboradores por faixa de horas de ausência.*
+
+Os resultados indicam, portanto, que o volume de horas de ausência **não está distribuído de maneira uniforme entre os colaboradores**. Embora a maior parte apresente volumes relativamente menores, uma parcela reduzida concentra uma participação relevante das horas registradas, tornando esse grupo particularmente importante para a compreensão do comportamento do absenteísmo na base analisada.
