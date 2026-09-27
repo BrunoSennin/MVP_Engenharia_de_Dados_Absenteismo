@@ -294,7 +294,7 @@ Foram obtidos:
 - Limite inferior = -7 horas
 - Limite superior = 17 horas
 
-A aplicação desse critério identificou **44 registros acima do limite superior**, com valores entre 24 e 120 horas de ausência.
+A aplicação desse critério identificou 44 registros acima do limite superior, com valores entre 24 e 120 horas de ausência.
 
 Os registros foram mantidos, pois representam valores estatisticamente atípicos, mas não necessariamente inválidos. Além disso, ausências de maior duração são relevantes para a análise do impacto do absenteísmo e sua exclusão poderia reduzir informações importantes para as perguntas de negócio.
 
@@ -305,3 +305,19 @@ A figura abaixo apresenta parte das verificações de qualidade executadas no Da
 ![Verificações de qualidade dos dados no Databricks](images/qualidade_dados_databricks.png)
 
 *Figura 2 — Verificações de qualidade executadas no Databricks.*
+
+## 6. Análise de Dados
+
+A análise foi realizada a partir das tabelas agregadas da camada Gold, utilizando o notebook [`02_analise_absenteismo.ipynb`](notebooks/02_analise_absenteismo.ipynb).
+
+Os resultados são apresentados de acordo com as quatro perguntas de negócio definidas no início do projeto, buscando compreender a distribuição das ausências, seus principais motivos e a concentração do volume de horas entre os colaboradores.
+
+### 6.1 Distribuição do absenteísmo ao longo dos meses e dias da semana
+
+A distribuição mensal demonstra diferenças no volume de horas de ausência ao longo dos meses. **Março apresentou o maior volume, com 765 horas de ausência, seguido por julho, com 734 horas**. Janeiro apresentou o menor volume entre os meses analisados, com 222 horas.
+
+Esses resultados indicam uma maior concentração de horas de ausência em determinados meses da base analisada. Entretanto, como os dados foram agregados pelo mês independentemente do ano, os resultados não devem ser interpretados como evidência de sazonalidade.
+
+![Total de horas de ausência por mês](images/absenteismo_mes.png)
+
+*Figura 3 — Total de horas de ausência por mês.*
