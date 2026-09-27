@@ -49,18 +49,14 @@ O conjunto de dados possui **740 registros e 21 atributos**, contendo informaç�
 
 ### 2.2 Carga dos dados
 
-Os arquivos de origem foram carregados manualmente no ambiente **Databricks Free Edition**, sendo armazenados em um Volume do Unity Catalog destinado à camada Bronze.
+Os arquivos de origem foram carregados manualmente no ambiente **Databricks Free Edition**, utilizando um Volume do Unity Catalog para armazenamento dos arquivos utilizados no projeto.
 
-O arquivo CSV utilizado no projeto foi armazenado no seguinte diretório:
+A leitura do arquivo CSV foi realizada utilizando **PySpark**, preservando inicialmente a estrutura e os nomes dos atributos provenientes da fonte.
 
-`/Volumes/workspace/bronze/source_files`
-
-A leitura inicial dos dados foi realizada utilizando **PySpark**, preservando na camada Bronze a estrutura e os nomes dos atributos provenientes da fonte.
-
-Após a ingestão, os dados foram persistidos em formato **Delta** na tabela:
+Após a ingestão, os dados foram persistidos em formato **Delta** na camada Bronze, na tabela:
 
 `workspace.bronze.absenteeism_raw`
 
-A tabela Bronze representa a entrada do pipeline e mantém os dados brutos antes das etapas de tratamento, padronização e enriquecimento realizadas na camada Silver.
+Essa tabela representa a entrada do pipeline e mantém os dados brutos antes das etapas de tratamento, padronização e enriquecimento realizadas na camada Silver.
 
-O processo de ingestão e construção das camadas pode ser consultado no notebook [`01_pipeline_medallion_absenteismo.ipynb`](./Notebooks/01_pipeline_medallion_absenteismo.ipynb).
+O processo de ingestão e construção das camadas está disponível no notebook [`01_pipeline_medallion_absenteismo.ipynb`](./Notebooks/01_pipeline_medallion_absenteismo.ipynb).
