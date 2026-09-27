@@ -45,7 +45,7 @@ O conjunto de dados possui **740 registros e 21 atributos**, contendo informaç�
 - **Quantidade de registros:** 740
 - **Quantidade de atributos:** 21
 - **Formato utilizado:** CSV
-- **Documentação auxiliar:** [Attribute Information](documentation/Attribute Information.md)
+- **Documentação auxiliar:** [Attribute Information]([documentation/Attribute Information.md](https://github.com/BrunoSennin/MVP_Engenharia_de_Dados_Absenteismo/blob/1bcdf75199b6f2a4aa0b87184cf7d961bc145020/documentation/Attribute%20Information.md))
 
 ### 2.2 Carga dos dados
 
