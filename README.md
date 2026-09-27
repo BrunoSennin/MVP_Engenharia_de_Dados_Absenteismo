@@ -46,3 +46,21 @@ O conjunto de dados possui **740 registros e 21 atributos**, contendo informaç�
 - **Quantidade de atributos:** 21
 - **Formato utilizado:** CSV
 - **Documentação auxiliar:** [Attribute Information](https://github.com/BrunoSennin/MVP_Engenharia_de_Dados_Absenteismo/blob/main/documentation/Attribute%20Information.md)
+
+- ### 2.2 Carga dos dados
+
+Os arquivos de origem foram carregados manualmente no ambiente **Databricks Free Edition**, sendo armazenados em um Volume do Unity Catalog destinado à camada Bronze.
+
+O arquivo CSV utilizado no projeto foi armazenado no seguinte diretório:
+
+`/Volumes/workspace/bronze/source_files`
+
+A leitura inicial dos dados foi realizada utilizando **PySpark**, preservando na camada Bronze a estrutura e os nomes dos atributos provenientes da fonte.
+
+Após a ingestão, os dados foram persistidos em formato **Delta** na tabela:
+
+`workspace.bronze.absenteeism_raw`
+
+A tabela Bronze representa a entrada do pipeline e mantém os dados brutos antes das etapas de tratamento, padronização e enriquecimento realizadas na camada Silver.
+
+O processo de ingestão e construção das camadas pode ser consultado no notebook [`01_pipeline_medallion_absenteismo.ipynb`](./Notebooks/01_pipeline_medallion_absenteismo.ipynb).
