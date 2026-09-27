@@ -297,3 +297,11 @@ Foram obtidos:
 A aplicação desse critério identificou **44 registros acima do limite superior**, com valores entre 24 e 120 horas de ausência.
 
 Os registros foram mantidos, pois representam valores estatisticamente atípicos, mas não necessariamente inválidos. Além disso, ausências de maior duração são relevantes para a análise do impacto do absenteísmo e sua exclusão poderia reduzir informações importantes para as perguntas de negócio.
+
+### 5.6 Evidência das verificações
+
+A figura abaixo apresenta parte das verificações de qualidade executadas no Databricks, incluindo a análise de registros com zero horas de ausência e a identificação de valores atípicos.
+
+![Verificações de qualidade dos dados no Databricks](/images/qualidade_dados_databricks.png)
+
+*Figura 2 — Evidência das verificações de qualidade executadas no Databricks.*
