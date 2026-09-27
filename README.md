@@ -314,6 +314,8 @@ Os resultados são apresentados de acordo com as quatro perguntas de negócio de
 
 ### 6.1 Distribuição do absenteísmo ao longo dos meses e dias da semana
 
+Respondendo a seguinte pergunta proposta no inicio do MVP, **Como o absenteísmo se distribui ao longo dos meses e dias da semana? Existem períodos de maior concentração?**.
+
 A distribuição mensal demonstra diferenças no volume de horas de ausência ao longo dos meses. **Março apresentou o maior volume, com 765 horas de ausência, seguido por julho, com 734 horas**. Janeiro apresentou o menor volume entre os meses analisados, com 222 horas.
 
 Esses resultados indicam uma maior concentração de horas de ausência em determinados meses da base analisada. Entretanto, como os dados foram agregados pelo mês independentemente do ano, os resultados não devem ser interpretados como evidência de sazonalidade.
