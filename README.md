@@ -187,6 +187,12 @@ Tabela agregada utilizada para analisar recorrência, volume e concentração da
 | `average_absence_hours` | DOUBLE | Média de horas de ausência por registro do colaborador. |
 | `percentage_total_hours` | DOUBLE | Participação percentual do colaborador no total de horas de ausência. |
 
+## 4. Pipeline de Dados
+
+O pipeline de dados foi desenvolvido no **Databricks Free Edition**, utilizando **PySpark** para realizar as etapas de ingestão, transformação, enriquecimento e agregação dos dados.
+
+O processamento segue a arquitetura Medallion e foi implementado no notebook [`01_pipeline_medallion_absenteismo.ipynb`](./Notebooks/01_pipeline_medallion_absenteismo.ipynb).
+
 ### 4.1 Camada Bronze
 
 A camada Bronze representa a entrada do pipeline. O arquivo CSV foi lido utilizando PySpark e persistido em formato Delta na tabela:
