@@ -400,8 +400,8 @@ Essa análise complementa os resultados anteriores ao demonstrar que volumes ele
 
 ## 7. Autoavaliação
 
-O desenvolvimento deste MVP permitiu aplicar de forma prática conceitos de engenharia de dados em ambiente cloud, desde a ingestão dos dados até sua disponibilização para análise. Dando a oportunidade de atuar do inicio ao fim do projeto estabelecendo problemas reais e atuando sobre uma base de dados, conforme uma situação do dia-a-dia de trabalho.
+O desenvolvimento deste MVP permitiu aplicar de forma prática conceitos de engenharia de dados em ambiente cloud, desde a ingestão dos dados até sua disponibilização para análise. O projeto proporcionou a oportunidade de atuar de ponta a ponta, partindo da definição de um problema de negócio até a construção e análise dos dados em um cenário aplicável ao dia a dia das organizações.
 
 Um dos principais aprendizados foi compreender a importância de preservar os dados de origem e documentar as decisões tomadas durante o tratamento. Situações como registros aparentemente duplicados, códigos não descritos na documentação, valores iguais a zero e valores estatisticamente atípicos exigiram análise antes da aplicação de qualquer tratamento, evitando a exclusão de informações sem evidências suficientes de erro.
 
-De forma geral, considero que o MVP atingiu o objetivo proposto ao construir um pipeline completo em ambiente cloud, estruturado nas camadas Bronze, Silver e Gold, com etapas de qualidade, transformação, agregação e análise orientadas às perguntas de negócio. Além de responder as perguntas estabelecidas no inicio do projeto, foi possível realizar a construção da análise de forma prática e direcionada ao objetivo principal.
+De forma geral, considero que o MVP atingiu o objetivo proposto ao construir um pipeline completo em ambiente cloud, estruturado nas camadas Bronze, Silver e Gold, com etapas de qualidade, transformação, agregação e análise orientadas às perguntas de negócio. Além de responder às perguntas estabelecidas no início do projeto, foi possível desenvolver uma análise prática e direcionada ao objetivo definido.
