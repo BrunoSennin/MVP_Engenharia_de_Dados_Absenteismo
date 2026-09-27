@@ -336,16 +336,16 @@ Os menores volumes foram observados na quinta-feira, com 553 horas, e na sexta-f
 
 Para responder à segunda pergunta de negócio — **Quais são os motivos de ausência mais frequentes e quais representam o maior volume de horas de absenteísmo?** — foram analisadas tanto a quantidade de ocorrências quanto o total de horas associado a cada motivo.
 
-Em relação à frequência, **consulta médica apresentou o maior número de registros, com 149 ocorrências**, seguida por consulta odontológica, com 112, e fisioterapia, com 69 ocorrências.
+Em relação à frequência, consulta médica apresentou o maior número de registros, com 149 ocorrências, seguida por consulta odontológica, com 112, e fisioterapia, com 69 ocorrências.
 
 ![Motivos de ausência mais frequentes](images/motivos_mais_frequentes.png)
 
 *Figura 5 — Dez motivos de ausência com maior número de ocorrências.*
 
-Quando considerado o volume de horas, observa-se uma composição diferente. As **doenças do sistema osteomuscular e do tecido conjuntivo apresentaram o maior volume, com 842 horas de ausência**, seguidas por lesões, envenenamentos e outras consequências de causas externas, com 729 horas. As consultas médicas, apesar de apresentarem a maior frequência, corresponderam a 424 horas de ausência.
+Quando considerado o volume de horas, observa-se uma composição diferente. As doenças do sistema osteomuscular e do tecido conjuntivo apresentaram o maior volume, com 842 horas de ausência, seguidas por lesões, envenenamentos e outras consequências de causas externas, com 729 horas. As consultas médicas, apesar de apresentarem a maior frequência, corresponderam a 424 horas de ausência.
 
 ![Motivos com maior volume de horas de ausência](images/motivos_maior_volume_horas.png)
 
 *Figura 6 — Dez motivos de ausência com maior volume de horas.*
 
-A comparação demonstra que **frequência de ocorrências e volume de horas representam perspectivas diferentes do absenteísmo**. Motivos associados a muitas ocorrências não são necessariamente aqueles responsáveis pelo maior volume de horas, indicando a importância de considerar simultaneamente recorrência e duração das ausências na análise.
+A comparação demonstra que frequência de ocorrências e volume de horas representam perspectivas diferentes do absenteísmo. Motivos associados a muitas ocorrências não são necessariamente aqueles responsáveis pelo maior volume de horas, indicando a importância de considerar simultaneamente recorrência e duração das ausências na análise.
