@@ -48,6 +48,8 @@ O conjunto de dados possui **740 registros e 21 atributos**, contendo informaç�
 - **Licença:** Creative Commons Attribution 4.0 International (CC BY 4.0)
 - **Documentação auxiliar:** [Attribute Information](./documentation/Attribute%20Information.md)
 
+O conjunto de dados é disponibilizado sob a licença Creative Commons Attribution 4.0 International (CC BY 4.0), que permite seu compartilhamento e adaptação, desde que seja atribuída a devida autoria.
+
 ### 2.2 Carga dos dados
 
 Os arquivos de origem foram carregados manualmente no ambiente **Databricks Free Edition**, utilizando um Volume do Unity Catalog para armazenamento dos arquivos utilizados no projeto.
