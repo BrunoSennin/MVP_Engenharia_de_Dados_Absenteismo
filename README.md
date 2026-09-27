@@ -369,3 +369,13 @@ A distribuição por faixas reforça esse comportamento. Dos 36 colaboradores pr
 *Figura 8 — Distribuição dos colaboradores por faixa de horas de ausência.*
 
 Os resultados indicam, portanto, que o volume de horas de ausência **não está distribuído de maneira uniforme entre os colaboradores**. Embora a maior parte apresente volumes relativamente menores, uma parcela reduzida concentra uma participação relevante das horas registradas, tornando esse grupo particularmente importante para a compreensão do comportamento do absenteísmo na base analisada.
+
+### 6.4 Relação entre recorrência e volume de horas de ausência
+
+Para responder à quarta pergunta de negócio — **Os colaboradores com maior recorrência de ausências são também aqueles que apresentam maior volume de horas de absenteísmo?** — foi analisada a relação entre a quantidade de ocorrências e o total de horas de ausência de cada colaborador.
+
+A análise apresentou um coeficiente de correlação de Pearson de 0,824, indicando uma forte associação positiva entre a quantidade de ocorrências e o volume total de horas de ausência na base analisada. Dessa forma, colaboradores com maior recorrência de ausências tendem também a apresentar maior volume acumulado de horas.
+
+![Relação entre recorrência e volume de horas de ausência](images/recorrencia_volume_absenteismo.png)
+
+*Figura 9 — Relação entre quantidade de ocorrências e total de horas de ausência por colaborador.*
