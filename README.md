@@ -143,13 +143,13 @@ Os códigos documentados pela fonte compreendem os valores de **1 a 28**. O cód
 
 Tabela agregada utilizada para analisar a distribuição do absenteísmo por mês.
 
-| Atributo | Descrição |
-|---|---|
-| `month_code` | Código numérico do mês. |
-| `month_name` | Descrição do mês. |
-| `absence_occurrences` | Quantidade de registros de ausência no mês. |
-| `total_absence_hours` | Total de horas de ausência no mês. |
-| `average_absence_hours` | Média de horas de ausência por registro no mês. |
+| Atributo | Tipo | Descrição |
+|---|---|---|
+| `month_code` | INT | Código numérico do mês. |
+| `month_name` | STRING | Descrição do mês. |
+| `absence_occurrences` | LONG | Quantidade de registros de ausência no mês. |
+| `total_absence_hours` | LONG | Total de horas de ausência no mês. |
+| `average_absence_hours` | DOUBLE | Média de horas de ausência por registro no mês. |
 
 #### 3.2.4 Gold — `agg_absenteeism_weekday`
 
