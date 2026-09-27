@@ -241,6 +241,6 @@ As tabelas da camada Gold são utilizadas como principal fonte do notebook [`02_
 
 A estrutura abaixo apresenta as tabelas persistidas no Unity Catalog após a execução do pipeline, organizadas nas camadas Bronze, Silver e Gold.
 
-![Estrutura das camadas Bronze, Silver e Gold no Databricks]()
+![Estrutura das camadas Bronze, Silver e Gold no Databricks](images/estrutura_databricks.png)
 
 *Figura 1 — Estrutura das camadas e tabelas do projeto no Databricks.*
