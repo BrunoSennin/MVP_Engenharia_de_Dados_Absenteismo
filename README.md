@@ -59,4 +59,4 @@ Após a ingestão, os dados foram persistidos em formato **Delta** na camada Bro
 
 Essa tabela representa a entrada do pipeline e mantém os dados brutos antes das etapas de tratamento, padronização e enriquecimento realizadas na camada Silver.
 
-O processo de ingestão e construção das camadas está disponível no notebook [`01_pipeline_medallion_absenteismo.ipynb`](./Notebooks/01_pipeline_medallion_absenteismo.ipynb).
+O processo de ingestão e construção das camadas está disponível no notebook [`01_pipeline_medallion_absenteismo.ipynb`](Nootbooks/01_pipeline_medallion_absenteismo.ipynb).
